@@ -1,0 +1,13 @@
+<html>
+<body>
+
+<h1>
+Dis is game
+</h1>
+
+<button  onclick="location.href='index.html'">
+Go home
+</button>
+
+</body>
+</html>
