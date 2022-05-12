@@ -1,33 +1,60 @@
 <html>
+    <h1>Level 1</h1>
+    <h3>Choose two colors to combine them.</h3>
 <head>
-<script src="index.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-.button {
+.btn {
   border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
+  background-color: inherit;
+  padding: 14px 28px;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
+  display: block;
 }
-.button1 {background-color: Blue;}
-.button2 {background-color: red;}
-.button3 {background-color: yellow;}
+
+
+.blue {
+  color: dodgerblue;
+}
+
+.blue:hover {
+  background: #2196F3;
+  color: white;
+}
+
+.yellow {
+  color: #FFDB58;
+}
+
+.yellow:hover {
+  background: #FFDB58;
+  color: white;
+}
+
+.red {
+  color: red;
+}
+
+.red:hover {
+  background: #f44336;
+  color: white;
+}
+
 </style>
 </head>
 <body>
+
+
+<button class="btn blue">Blue</button>
+<button class="btn yellow">Yellow</button>
+<button class="btn red">Red</button>
+
 </body>
 </html>
 
-
-<button id="blue" class="button button1" onclick=getValue()>Blue</button> 
-<button id="red" class="button button2" onclick=getValue()>Red</button>
-<button id="yellow" class="button button3" onclick=getValue()>Yellow</button>
-</body>
-</html>
 
 <html>
 <head>
@@ -35,7 +62,7 @@
 div {
   background-color: lightgrey;
   width: 300px;
-  border: 15px black;
+  border: 15px grey;
   padding: 50px;
   margin: 20px;
 }
@@ -46,26 +73,6 @@ div {
 <h2>Results</h2>
 
 <div>This is a result!</div>
-
-</body>
-</html>
-<html>
-<body>
-<style>
-.p1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgba(0, 254, 195, 0.675);
-    font-weight: bold;
-}
-    
-</style>
-
-<div class="p1"><h1><center>
-Level 1</center>
-</h1></div>
-
-<button  onclick="location.href='index.html'"><bottomleft>
-Go Home</bottomleft>
-</button>
 
 </body>
 </html>
