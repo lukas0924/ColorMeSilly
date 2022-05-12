@@ -5,15 +5,16 @@ var cflag=0|1;
 const button1={'btn blue': '0,0,255'};
 const button2={'btn yellow': '255,255,0'};
 const button3={'btn red': '255,0,0'};
+function getValueBlue(){
+	console.log(Object.values(button1));
+}
 
-console.log(Object.values('btn blue'));
-console.log(Object.values('btn yellow'));
-console.log(Object.values('btn red'));
+function getValueYellow(){
+	console.log(Object.values(button2));
+}
 
-function getValue(){
-document.getElementById("blue").onclick=getValue();
-document.getElementById("yellow").onclick=getValue();
-document.getElementById("red").onclick=getValue();
+function getValueRed(){
+	console.log(Object.values(button3));
 }
 
 function createColor(){
