@@ -6,14 +6,17 @@ const button1={'btn blue': '0,0,255'};
 const button2={'btn yellow': '255,255,0'};
 const button3={'btn red': '255,0,0'};
 
-document.getElementById("blue").onclick=getValue();
-document.getElementById("yellow").onclick=getValue();
-document.getElementById("red").onclick=getValue();
+//document.getElementById("blue").onclick=getValue();
+//document.getElementById("yellow").onclick=getValue();
+//document.getElementById("red").onclick=getValue();
 
 function getValue(){
-	console.log(Object.values('btn blue'));
-	console.log(Object.values('btn yellow'));
-	console.log(Object.values('btn red'));
+	document.getElementById("blue").onclick=console.log(Object.values('btn blue'));
+	document.getElementById("yellow").onclick=console.log(Object.values('btn yellow'));
+	document.getElementById("red").onclick=console.log(Object.values('btn red'));
+	//console.log(Object.values('btn blue'));
+	//console.log(Object.values('btn yellow'));
+	//console.log(Object.values('btn red'));
 }
 
 function createColor(){
