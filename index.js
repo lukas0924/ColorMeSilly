@@ -15,6 +15,7 @@ function getValueBlue(){
 	else {
 		c2=button1;
 	}
+	createColor();
 }
 	
 function getValueYellow(){
@@ -26,6 +27,7 @@ function getValueYellow(){
 	else {
 		c2=button2;
 	}
+	createColor();
 }
 
 function getValueRed(){
@@ -37,6 +39,7 @@ function getValueRed(){
 	else {
 		c2=button3;
 	}
+	createColor();
 }
 
 function createColor(){
