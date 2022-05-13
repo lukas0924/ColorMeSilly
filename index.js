@@ -5,7 +5,7 @@ var cflag=0|1;
 const button1={'btn blue': '0,0,255'};
 const button2={'btn yellow': '255,255,0'};
 const button3={'btn red': '255,0,0'};
-
+console.log("hello world");
 function getValueBlue(){
 	console.log("about to call createColor");
 	console.log(Object.values(button1));
