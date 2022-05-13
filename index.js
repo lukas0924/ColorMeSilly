@@ -10,16 +10,34 @@ function getValueBlue(){
 	console.log(Object.values(button1));
 	if(cflag == 0){
 		c1=button1;
-		cflag == 1;
+		cflag=1;
 	}
 	else {
 		c2=button1;
 	}
 }
 
-function getValueYellow(){console.log(Object.values(button2));}
+function getValueYellow(){
+	console.log(Object.values(button2));
+	if(cflag == 0){
+		c1=button2;
+		cflag=1;
+	}
+	else {
+		c2=button2;
+	}
+}
 
-function getValueRed(){console.log(Object.values(button3));}
+function getValueRed(){
+	console.log(Object.values(button3));
+	if(cflag == 0){
+		c1=button3;
+		cflag=1;
+	}
+	else {
+		c2=button3;
+	}
+}
 
 function createColor(){
 var first=c1/2;
