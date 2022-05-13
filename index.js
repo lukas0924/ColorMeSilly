@@ -8,6 +8,7 @@ const button3={'btn red': '255,0,0'};
 
 function getValueBlue(){
 	console.log(Object.values(button1));
+	console.log("about to call createColor");
 	if(cflag == 0){
 		c1=button1;
 		cflag=1;
@@ -15,7 +16,7 @@ function getValueBlue(){
 	else {
 		c2=button1;
 	}
-	console.log("about to call createColor");
+	//console.log("about to call createColor");
 	createColor();
 }
 	
