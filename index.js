@@ -15,6 +15,7 @@ function getValueBlue(){
 	else {
 		c2=button1;
 	}
+	console.log("about to call createColor");
 	createColor();
 }
 	
@@ -27,6 +28,7 @@ function getValueYellow(){
 	else {
 		c2=button2;
 	}
+	console.log("about to call createColor");
 	createColor();
 }
 
@@ -39,6 +41,7 @@ function getValueRed(){
 	else {
 		c2=button3;
 	}
+	console.log("about to call createColor");
 	createColor();
 }
 
@@ -46,5 +49,6 @@ function createColor(){
 var first=c1/2;
 var second=c2/2;
 var result=first+second;
+console.log("i am here");
 return result;
 }
