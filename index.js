@@ -1,5 +1,5 @@
-var c1=rgb(0,0,0);
-var c2=rgb(0,0,0);
+var c1=(0,0,0);
+var c2=(0,0,0);
 var cflag=0|1;
 
 const button1={'btn blue': rgb(0,0,255)};
