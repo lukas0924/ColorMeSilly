@@ -1,5 +1,5 @@
-var c1=(0,0,0);
-var c2=(0,0,0);
+var c1={r:0, g:0, b:0};
+var c2={r:0, g:0, b:0};
 var cflag=0|1;
 
 const button1={r:0, g:0, b:255};
@@ -15,7 +15,7 @@ function getValueBlue(){
 	else {
 		c2=button1;
 	}
-	console.log("about to call createColor");
+	console.log(Object.values(c1));
 	createColor();
 }
 	
