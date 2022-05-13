@@ -1,6 +1,3 @@
-var r = Red;
-var g = Green;
-var b = Blue;
 var c1=(0,0,0);
 var c2=(0,0,0);
 var cflag=0|1;
