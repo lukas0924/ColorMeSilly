@@ -2,7 +2,7 @@ var c1={r:0, g:0, b:0};
 var c2={r:0, g:0, b:0};
 var cflag= [];
 
-const button1={r:0, g:0, b:245};
+const button1={r:0, g:0, b:255};
 const button2={r:255, g:255, b:0};
 const button3={r:255, g:0, b:0};
 
