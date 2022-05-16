@@ -1,8 +1,8 @@
 var c1={r:0, g:0, b:0};
 var c2={r:0, g:0, b:0};
-var cflag=0|1;
+var cflag= [];
 
-const button1={r:0, g:0, b:255};
+const button1={r:0, g:0, b:245};
 const button2={r:255, g:255, b:0};
 const button3={r:255, g:0, b:0};
 
@@ -12,11 +12,11 @@ function getValueBlue(){
 		c1=button1;
 		cflag == 1;
 	}
-	else {
+	else if(cflag == 1){
 		c2=button1;
 	}
-	console.log(Object.values(c2));
-	console.log(Object.values(c1));
+	console.log(Object.values(c2),"this is c2");
+	console.log(Object.values(c1),"this is c1");
 	createColor();
 }
 	
@@ -26,11 +26,11 @@ function getValueYellow(){
 		c1=button2;
 		cflag == 1;
 	}
-	else {
+	else if(cflag == 1){
 		c2=button2;
 	}
-	console.log(Object.values(c2));
-	console.log(Object.values(c1));
+	console.log(Object.values(c2),"this is c2");
+	console.log(Object.values(c1),"this is c1");
 	createColor();
 }
 
@@ -40,11 +40,11 @@ function getValueRed(){
 		c1=button3;
 		cflag == 1;
 	}
-	else {
+	else if(cflag == 1){
 		c2=button3;
 	}
-	console.log(Object.values(c2));
-	console.log(Object.values(c1));
+	console.log(Object.values(c2),"this is c2");
+	console.log(Object.values(c1),"this is c1");
 	createColor();
 }
 
@@ -52,11 +52,7 @@ function createColor(){
 var first=c1%2;
 var second=c2%2;
 var result=first+second;
-console.log(Object.values(c2));
-console.log(Object.values(c1));
+console.log(Object.values(c2),"this is c2");
+console.log(Object.values(c1),"this is c1");
 console.log("i am here");
-return result;
-}
-function half_c1(){
-
-}
+return result;}
