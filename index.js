@@ -10,9 +10,11 @@ function getValueBlue(){
 	console.log(Object.values(button1));
 	if(cflag != 1){
 		c1=button1;
-		cflag == 1;
+		cflag + 1;
 	}
-	else{c2=button1;}
+	else(c1 == button2 || c1 == button3);{
+		c2=button1;
+	}
 	
 	console.log(Object.values(c2),"this is c2");
 	console.log(Object.values(c1),"this is c1");
@@ -23,9 +25,11 @@ function getValueYellow(){
 	console.log(Object.values(button2));
 	if(cflag != 1){
 		c1=button2;
-		cflag == 1;
+		cflag + 1;
 	}
-	else{c2=button2;}
+	else(c1 == button1 || c1 == button3);{
+		c2=button2;
+	}
 	
 	console.log(Object.values(c2),"this is c2");
 	console.log(Object.values(c1),"this is c1");
@@ -36,9 +40,11 @@ function getValueRed(){
 	console.log(Object.values(button3));
 	if(cflag != 1){
 		c1=button3;
-		cflag == 1;
+		cflag + 1;
 	}
-	else{c2=button3;}
+	else(c1 == button1 || c1 == button2);{
+		c2=button3;
+	}
 	
 	console.log(Object.values(c2),"this is c2");
 	console.log(Object.values(c1),"this is c1");
@@ -46,10 +52,12 @@ function getValueRed(){
 }
 
 function createColor(){
-var first=c1%2;
-var second=c2%2;
+var first=c1.values%2;
+var second=c2.values%2;
 var result=first+second;
 console.log(Object.values(c2),"this is c2");
 console.log(Object.values(c1),"this is c1");
-console.log("i am here");
+console.log(Object.values(result),"i am here");
+console.log(Object.values(first),"i am here");
+console.log(Object.values(second),"i am here");
 return result;}
