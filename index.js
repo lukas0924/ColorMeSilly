@@ -1,6 +1,6 @@
 var c1={r:0, g:0, b:0};
 var c2={r:0, g:0, b:0};
-var cflag= [];
+var cflag= 0||1;
 
 const button1={r:0, g:0, b:255};
 const button2={r:255, g:255, b:0};
@@ -12,9 +12,8 @@ function getValueBlue(){
 		c1=button1;
 		cflag == 1;
 	}
-	else if(cflag == 1){
-		c2=button1;
-	}
+	else{c2=button1;}
+	
 	console.log(Object.values(c2),"this is c2");
 	console.log(Object.values(c1),"this is c1");
 	createColor();
@@ -26,9 +25,8 @@ function getValueYellow(){
 		c1=button2;
 		cflag == 1;
 	}
-	else if(cflag == 1){
-		c2=button2;
-	}
+	else{c2=button2;}
+	
 	console.log(Object.values(c2),"this is c2");
 	console.log(Object.values(c1),"this is c1");
 	createColor();
@@ -40,9 +38,8 @@ function getValueRed(){
 		c1=button3;
 		cflag == 1;
 	}
-	else if(cflag == 1){
-		c2=button3;
-	}
+	else{c2=button3;}
+	
 	console.log(Object.values(c2),"this is c2");
 	console.log(Object.values(c1),"this is c1");
 	createColor();
