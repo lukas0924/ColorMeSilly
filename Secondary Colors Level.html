@@ -1,5 +1,5 @@
 <html>
-    <h1>Level 2 - Secondary Colors:</h1>
+    <h1>Level ? - Secondary Colors:</h1>
     <h3>Select all secondary colors:</h3>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,11 +39,11 @@
   color: white;
 }
 .blue {
-  color: blue;
+  color: dodgerblue;
 }
 
 .blue:hover {
-  background: blue;
+  background: #2196F3;
   color: white;
 }
 .yellow {
@@ -66,17 +66,26 @@
 </head>
 <body>
 
+<script>
+    var g=0;
+function upOrDown(isUp) {
+  g = isUp? (++g>3?3:g):(--g<0?0:g)
+  document.getElementById('up').innerHTML = g;
+  return;
+}
+</script>
 
-<button class="btn green">■</button>
-<button class="btn red">■</button>
-<button class="btn purple">■</button>
-<button class="btn blue">■</button>
-<button class="btn yellow">■</button>
-<button class="btn orange">■</button>
+<button onclick="upOrDown(true);" class="btn green">■</button>
+<button onclick="upOrDown(false);" class="btn red">■</button>
+<button onclick="upOrDown(true);" class="btn purple">■</button>
+<button onclick="upOrDown(false);" class="btn blue">■</button>
+<button onclick="upOrDown(false);" class="btn yellow">■</button>
+<button onclick="upOrDown(true);" class="btn orange">■</button>
+<h2>Results:</h2>
+<div id="up"></div>
 
 </body>
 </html>
-
 
 <html>
 <head>
@@ -90,11 +99,3 @@ div {
 }
 </style>
 </head>
-<body>
-
-<h2>Results</h2>
-
-<div>This is a result!</div>
-
-</body>
-</html>
