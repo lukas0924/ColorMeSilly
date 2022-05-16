@@ -10,7 +10,7 @@ function getValueBlue(){
 	console.log(Object.values(button1));
 	if(cflag != 1){
 		c1=button1;
-		cflag=1;
+		cflag == 1;
 	}
 	else {
 		c2=button1;
@@ -24,7 +24,7 @@ function getValueYellow(){
 	console.log(Object.values(button2));
 	if(cflag != 1){
 		c1=button2;
-		cflag=1;
+		cflag == 1;
 	}
 	else {
 		c2=button2;
@@ -38,7 +38,7 @@ function getValueRed(){
 	console.log(Object.values(button3));
 	if(cflag != 1){
 		c1=button3;
-		cflag=1;
+		cflag == 1;
 	}
 	else {
 		c2=button3;
@@ -56,4 +56,7 @@ console.log(Object.values(c2));
 console.log(Object.values(c1));
 console.log("i am here");
 return result;
+}
+function half_c1(){
+
 }
