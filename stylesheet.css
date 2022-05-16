@@ -1,0 +1,152 @@
+/*Tile: Color Me Silly*/
+
+@font-face {
+    font-family: bungee;
+    src: url(bungee_shade2/bungeeshade-regular-webfont.woff);
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+.p1 {
+    font-size: 50px;
+    line-height: 55px;
+    font-family: bungee;
+    text-align: center;
+    top:20;
+    position: relative;
+}
+
+/*Sub-Title: Welcome to the game of color combinations*/
+
+@font-face {
+    font-family: bungee;
+    src: url(bungee_shade2/bungeeshade-regular-webfont.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.p2 {
+    font-size: 30px;
+    line-height: 35px;
+    font-family: bungee;
+    text-align: center;
+    position: relative;
+    text-decoration: underline black 10px; 
+}
+
+/*Information on Color Theory*/
+
+@font-face {
+    font-family: koulen;
+    src: url(KoulenFont/koulen-regular-webfont.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.p3 { 
+    font-size: 20px;
+    line-height: 25px;
+    font-family: koulen;
+    text-align: center;
+    top: 60;
+    position: relative;
+}
+
+
+/*Buttons*/
+
+@font-face {
+    font-family: modak;
+    src: url(ModakFont/modak-regular-webfont.woff);
+    font-weight: normal;
+    font-style: bold;
+}
+
+.button1 {
+    background-color: blue;
+    border: none;
+    color:white;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    font-family:koulen;
+    border-radius: 10px;
+    height: 75px;
+    width: 200px;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    top: 85;
+    margin: 4px 2px;
+    position: relative;
+}
+
+.button1:hover {background-color:black}
+
+.button1:active {
+    background-color: black;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+
+.button2 {
+    background-color: green;
+    border: none;
+    color:white;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    font-family:koulen;
+    border-radius: 10px;
+    height: 75px;
+    width: 200px;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    position: relative;
+    top: 90;
+    margin: 4px 2px;
+}
+
+.button2:hover {background-color:black}
+
+.button2:active {
+    background-color: black;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+
+.button3 {
+    background-color:red;
+    border: none;
+    color:white;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    font-family:koulen;
+    border-radius: 10px;
+    height: 75px;
+    width: 200px;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    position: relative;
+    top: 90;
+    margin: 4px 2px;
+}
+
+.button3:hover {background-color:black}
+
+.button3:active {
+    background-color: black;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+
