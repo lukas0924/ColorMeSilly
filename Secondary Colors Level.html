@@ -75,12 +75,12 @@ function upOrDown(isUp) {
 }
 </script>
 
-<button onclick="upOrDown(true);" class="btn green">■</button>
-<button onclick="upOrDown(false);" class="btn red">■</button>
-<button onclick="upOrDown(true);" class="btn purple">■</button>
-<button onclick="upOrDown(false);" class="btn blue">■</button>
-<button onclick="upOrDown(false);" class="btn yellow">■</button>
-<button onclick="upOrDown(true);" class="btn orange">■</button>
+<button onclick="upOrDown(true);alert('Correct! +1');" class="btn green">■</button>
+<button onclick="upOrDown(false);alert('Incorrect. This is a Primary Color -1');" class="btn red">■</button>
+<button onclick="upOrDown(true);alert('Correct! +1');" class="btn purple">■</button>
+<button onclick="upOrDown(false);alert('Incorrect. This is a Primary Color -1');" class="btn blue">■</button>
+<button onclick="upOrDown(false);alert('Incorrect. This is a Primary Color -1');" class="btn yellow">■</button>
+<button onclick="upOrDown(true);alert('Correct! +1');" class="btn orange">■</button>
 <h2>Results:</h2>
 <div id="up"></div>
 
