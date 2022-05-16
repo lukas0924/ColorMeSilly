@@ -157,21 +157,31 @@
 <body>
 
 
-<button class="btn green">■</button>
-<button class="btn chartreuse">■</button>
-<button class="btn red">■</button>
-<button class="btn vermilion">■</button>
-<button class="btn purple">■</button>
-<button class="btn magenta">■</button>
-<button class="btn blue">■</button>
-<button class="btn teal">■</button>
-<button class="btn violet">■</button>
-<button class="btn yellow">■</button>
-<button class="btn amber">■</button>
-<button class="btn orange">■</button>
-
 </body>
 </html>
+<script>
+  var g=0;
+function upOrDown(isUp) {
+g = isUp? (++g>6?6:g):(--g<0?0:g)
+document.getElementById('up').innerHTML = g;
+return;
+}
+</script>
+<button onclick="upOrDown(false);" class="btn green">■</button>
+<button onclick="upOrDown(true);" class="btn chartreuse">■</button>
+<button onclick="upOrDown(false);" class="btn red">■</button>
+<button onclick="upOrDown(true);" class="btn vermilion">■</button>
+<button onclick="upOrDown(false);" class="btn purple">■</button>
+<button onclick="upOrDown(true);" class="btn magenta">■</button>
+<button onclick="upOrDown(false);" class="btn blue">■</button>
+<button onclick="upOrDown(true);" class="btn teal">■</button>
+<button onclick="upOrDown(true);" class="btn violet">■</button>
+<button onclick="upOrDown(false);" class="btn yellow">■</button>
+<button onclick="upOrDown(true);" class="btn amber">■</button>
+<button onclick="upOrDown(false);" class="btn orange">■</button>
+
+<h2>Results:</h2>
+<div id="up"></div>
 
 
 <html>
@@ -188,9 +198,6 @@ div {
 </head>
 <body>
 
-<h2>Results</h2>
-
-<div>This is a result!</div>
 
 </body>
 </html>

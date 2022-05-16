@@ -64,14 +64,23 @@
 </style>
 </head>
 <body>
+  <script>
+    var g=0;
+function upOrDown(isUp) {
+  g = isUp? (++g>3?3:g):(--g<0?0:g)
+  document.getElementById('up').innerHTML = g;
+  return;
+}
+</script>
 
-
-<button class="btn orange">■</button>
-<button class="btn blue">■</button>
-<button class="btn yellow">■</button>
-<button class="btn green">■</button>
-<button class="btn purple">■</button>
-<button class="btn red">■</button>
+<button onclick="upOrDown(false);" class="btn green">■</button>
+<button onclick="upOrDown(true);" class="btn red">■</button>
+<button onclick="upOrDown(false);" class="btn purple">■</button>
+<button onclick="upOrDown(true);" class="btn blue">■</button>
+<button onclick="upOrDown(true);" class="btn yellow">■</button>
+<button onclick="upOrDown(false);" class="btn orange">■</button>
+<h2>Results:</h2>
+<div id="up"></div>
 
 </body>
 </html>
