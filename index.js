@@ -22,7 +22,17 @@ function resetColors(){
 }
 
 function combineColor(){
-	comsole.log("Get colors: "+color1+", "+color2);
+	console.log("Get colors: "+color1+", "+color2);
 	resetColors();
 	return 0;
+}
+
+function colorStringToRGB(color){
+
+}
+
+function createColor(color1,color2){
+	if (color1 == "blue" && color2 == "yellow"){
+		return green;
+	}
 }
