@@ -1,9 +1,47 @@
 <html>
-
-    <h1>Level 1</h1>
-    <h3>Choose two colors to combine them</h3>
-  </div>
+    <style>
+      body {
+            background-color: black;
+      }
+    </style>
+  
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesheet.css">
+        </head>
+        <body>
+            
+        </body>
 </html>
+
+
+
+<!DOCTYPE html>
+<html>
+    <style>
+        .multicolortext {
+            background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip:text;
+            color:transparent;
+        }
+    </style>
+</html>
+
+    <div class="l1">
+    <h1>
+      <span class="multicolortext">LEVEL 1</span>
+    </h1>
+    </div>
+    <div class="l2">
+    <p>CLICK ON ANY TWO COLORS TO MAKE A SECONDARY COLOR</p>
+  </div>
+
+</html>
+
 <head>
 <script src="index.js"></script>
 
@@ -13,10 +51,12 @@
 .btn {
   border: none;
   background-color: inherit;
-  padding: 14px 28px;
-  font-size: 16px;
+  padding: 24px 35px;
+  font-size: 25px;
   cursor: pointer;
   display: block;
+  position: relative;
+  align-items: center;
 }
 
 
@@ -40,6 +80,7 @@
 
 .red {
   color: red;
+  
 }
 
 .red:hover {
@@ -48,7 +89,6 @@
 }
 
 </style>
-</head>
 <body>
 
 
@@ -61,22 +101,34 @@
 
 
 <html>
-<head>
 <style>
-div {
-  background-color: lightgrey;
-  width: 300px;
-  border: 15px grey;
+scorebox {
+  background-color: white;
+  width: 400px;
+  height: 150px;
+  border: 15px black;
   padding: 50px;
   margin: 20px;
+  position: relative;
+  align-items: center;
+  border-radius: 10px;
 }
 </style>
-</head>
 <body>
 
 <h2>Results</h2>
 
-<div>This is a result!</div>
+<center><scorebox>This is a result!</scorebox></center>
 
+<div class="homebutton1"<button  onclick="location.href='index.html'">
+  GO HOME
+  </button>
+</div>
+
+
+<div class="nextlevel3"<button  onclick="location.href='level2.html'">
+  NEXT LEVEL
+  </button>
+</div>
 </body>
 </html>

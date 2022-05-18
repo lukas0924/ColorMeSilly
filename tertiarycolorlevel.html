@@ -1,7 +1,47 @@
 <html>
-    <h1>Level 3 - Tertiary Colors:</h1>
-    <h3>Select all Teritary colors:</h3>
-<head>
+    <style>
+      body {
+            background-color: black;
+      }
+    </style>
+  
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesheet.css">
+        </head>
+        <body>
+            
+        </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+    <style>
+        .multicolortext {
+            background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip:text;
+            color:transparent;
+        }
+    </style>
+</html>
+
+    <div class="l1">
+    <h1>
+      <span class="multicolortext">TERTIARY COLORS</span>
+    </h1>
+    </div>
+    <div class="l2">
+    <p>SELECT ALL TERTIARY COLORS</p>
+  </div>
+
+</html>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .btn {
@@ -11,6 +51,7 @@
   font-size: 16px;
   cursor: pointer;
   display: inline-block;
+  border-radius: 10px;
 }
 
 
@@ -167,6 +208,7 @@ document.getElementById('up').innerHTML = g;
 return;
 }
 </script>
+<center>
 <button onclick="upOrDown(false);" class="btn green">■</button>
 <button onclick="upOrDown(true);" class="btn chartreuse">■</button>
 <button onclick="upOrDown(false);" class="btn red">■</button>
@@ -179,20 +221,24 @@ return;
 <button onclick="upOrDown(false);" class="btn yellow">■</button>
 <button onclick="upOrDown(true);" class="btn amber">■</button>
 <button onclick="upOrDown(false);" class="btn orange">■</button>
-
+</center>
 <h2>Results:</h2>
-<div id="up"></div>
+<center><scorebox id="up"></scorebox></center>
 
 
 <html>
 <head>
 <style>
-div {
-  background-color: lightgrey;
-  width: 300px;
-  border: 15px grey;
+scorebox {
+  background-color: white;
+  width: 400px;
+  height: 150px;
+  border: 15px black;
   padding: 50px;
   margin: 20px;
+  position: relative;
+  align-items: center;
+  border-radius: 10px;
 }
 </style>
 </head>
@@ -200,4 +246,14 @@ div {
 
 
 </body>
+<div class="homebuttontertiary"<button  onclick="location.href='index.html'">
+  GO HOME
+  </button>
+</div>
+
+
+<div class="nextlevel2"<button  onclick="location.href='guide.html'">
+  FINISH
+  </button>
+</div>
 </html>

@@ -1,7 +1,46 @@
 <html>
-    <h1>Level ? - Secondary Colors:</h1>
-    <h3>Select all secondary colors:</h3>
-<head>
+    <style>
+      body {
+            background-color: black;
+      }
+    </style>
+  
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesheet.css">
+        </head>
+        <body>
+            
+        </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+    <style>
+        .multicolortext {
+            background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip:text;
+            color:transparent;
+        }
+    </style>
+</html>
+
+    <div class="l1">
+    <h1>
+      <span class="multicolortext">SECONDARY COLORS</span>
+    </h1>
+    </div>
+    <div class="l2">
+    <p>SELECT ALL SECONDARY COLORS</p>
+  </div>
+
+</html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .btn {
@@ -11,6 +50,7 @@
   font-size: 16px;
   cursor: pointer;
   display: inline-block;
+  border-radius: 10px;
 }
 
 .green {
@@ -74,7 +114,7 @@ function upOrDown(isUp) {
   return;
 }
 </script>
-
+<center>
 <button onclick="upOrDown(true);alert('Correct! +1');" class="btn green">■</button>
 <button onclick="upOrDown(false);alert('Incorrect. This is a Primary Color -1');" class="btn red">■</button>
 <button onclick="upOrDown(true);alert('Correct! +1');" class="btn purple">■</button>
@@ -82,20 +122,37 @@ function upOrDown(isUp) {
 <button onclick="upOrDown(false);alert('Incorrect. This is a Primary Color -1');" class="btn yellow">■</button>
 <button onclick="upOrDown(true);alert('Correct! +1');" class="btn orange">■</button>
 <h2>Results:</h2>
-<div id="up"></div>
+</center>
 
+<center>
+<scorebox id="up"></scorebox>
+</center>
 </body>
 </html>
 
 <html>
 <head>
 <style>
-div {
-  background-color: lightgrey;
-  width: 300px;
-  border: 15px grey;
+scorebox {
+  background-color: white;
+  width: 400px;
+  height: 150px;
+  border: 15px black;
   padding: 50px;
   margin: 20px;
+  position: relative;
+  align-items: center;
+  border-radius: 10px;
 }
 </style>
+<div class="homebuttonsecondary"<button  onclick="location.href='index.html'">
+  GO HOME
+  </button>
+</div>
+
+
+<div class="nextlevel2"<button  onclick="location.href='tertiarycolorlevel.html'">
+  NEXT LEVEL
+  </button>
+</div>
 </head>

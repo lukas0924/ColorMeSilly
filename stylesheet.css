@@ -163,6 +163,7 @@
     color:white;
     text-align: center;
     justify-content: center;
+    display: inline-flex;
     font-size: 50px;
     font-family: koulen;
     border-radius: 10px;
@@ -192,6 +193,7 @@
     color:white;
     text-align: center;
     justify-content: center;
+    display: inline-flex;
     font-size: 50px;
     font-family: koulen;
     border-radius: 10px;
@@ -212,4 +214,241 @@
     background-color: black;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+
+/*Level1*/
+
+
+.l1 {
+    font-size: 30px;
+    line-height: 35px;
+    font-family: bungee;
+    text-align: center;
+    position: relative; 
+    color:white;
+    top: 10;
+}
+
+.l2 { 
+    font-size: 20px;
+    line-height: 25px;
+    font-family: koulen;
+    text-align: left;
+    top: 20;
+    position: relative;
+    color:white;
+}
+
+/*HomeButtonLevel1*/ 
+.homebutton1 {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 25px;
+    font-family: koulen;
+    border-radius: 10px;
+    height: 50px;
+    width: 115px;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    position: relative;
+    top: 200px;
+    align-items: center;
+    float: left;
+    top: 245;
+}
+
+
+/*HomeButtonLevel2*/ 
+.homebutton2 {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 25px;
+    font-family: koulen;
+    border-radius: 10px;
+    height: 50px;
+    width: 115px;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    position: relative;
+    top: 200px;
+    align-items: center;
+    float: left;
+    top: 124;
+}
+
+/*HomeButtonPrimaryColors*/
+.homebuttonprimary {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 25px;
+    font-family: koulen;
+    border-radius: 10px;
+    height: 50px;
+    width: 115px;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    position: relative;
+    top: 200px;
+    align-items: center;
+    float: left;
+    top: 400;
+}
+
+/*HomeButtonSecondaryColors*/
+.homebuttonsecondary {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 25px;
+    font-family: koulen;
+    border-radius: 10px;
+    height: 50px;
+    width: 115px;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    position: relative;
+    top: 200px;
+    align-items: center;
+    float: left;
+    top: 400;
+}
+
+/*HomeButtonTertiaryColors*/
+.homebuttontertiary {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 25px;
+    font-family: koulen;
+    border-radius: 10px;
+    height: 50px;
+    width: 115px;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    position: relative;
+    top: 200px;
+    align-items: center;
+    float: left;
+    top: 400;
+}
+
+/*HomeButtonGameSelectionScreen*/
+.homegameselectionscreen{
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 25px;
+    font-family: koulen;
+    border-radius: 10px;
+    height: 50px;
+    width: 115px;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    position: relative;
+    top: 200px;
+    align-items: center;
+    float: left;
+    top: 160;
+}
+
+
+/*NEXTLEVELBUTTON*/
+
+.nextlevel2 {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 25px;
+    font-family: koulen;
+    border-radius: 10px;
+    height: 50px;
+    width: 115px;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    position: relative;
+    top: 200px;
+    align-items: center;
+    float: right;
+    top: 400;
+}
+
+/*NEXTLEVELFORLEVEL1*/
+
+.nextlevel3 {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 25px;
+    font-family: koulen;
+    border-radius: 10px;
+    height: 50px;
+    width: 115px;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    position: relative;
+    top: 200px;
+    align-items: center;
+    float: right;
+    top: 245;
+}
+
+
+/*NEXTLEVELFORLEVEL2*/
+
+.nextlevel4 {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 25px;
+    font-family: koulen;
+    border-radius: 10px;
+    height: 50px;
+    width: 115px;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    position: relative;
+    top: 200px;
+    align-items: center;
+    float: right;
+    top: 124;
 }
