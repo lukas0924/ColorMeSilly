@@ -22,7 +22,7 @@ function resetColors(){
 }
 
 function combineColor(){
-	console.log("Get colors: "+color1+", "+color2);
+	console.log("Got colors: "+color1+", "+color2);
 	resetColors();
 	return 0;
 }
