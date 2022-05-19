@@ -25,7 +25,7 @@ function combineColor(){
 	console.log("Got colors: "+color1+", "+color2);
 	color1 = colorStringToRGB(color1);
 	color2 = colorStringToRGB(color2);
-	console.log(color1+": "+color2+": ");
+	console.log("Got values: "color1+": "+color2+": ");
 	resetColors();
 	console.log(color1+": "+color2+": ");
 	return 0;
