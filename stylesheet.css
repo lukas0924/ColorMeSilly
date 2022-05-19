@@ -289,7 +289,7 @@
     border: none;
     vertical-align: middle;
     position: relative;
-    margin-top: 16%;
+    margin-top: 8%;
     align-items: center;
     float: left;
 }
@@ -340,7 +340,7 @@
     top: 200px;
     align-items: center;
     float: left;
-    top: 125;
+    top: 127;
 }
 
 /*HomeButtonSecondaryColors*/
@@ -363,7 +363,7 @@
     top: 200px;
     align-items: center;
     float: left;
-    top: 125;
+    top: 127;
 }
 
 /*HomeButtonTertiaryColors*/
@@ -386,7 +386,7 @@
     top: 200px;
     align-items: center;
     float: left;
-    top: 125;
+    top: 128;
 }
 
 /*HomeButtonGameSelectionScreen*/
@@ -434,7 +434,7 @@
     top: 200px;
     align-items: center;
     float: right;
-    top: 135;
+    top: 127;
 }
 
 /*NEXTLEVELFORLEVEL1*/
@@ -458,7 +458,7 @@
     top: 200px;
     align-items: center;
     float: right;
-    top: 245;
+    top: 120;
 }
 
 

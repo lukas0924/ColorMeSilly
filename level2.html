@@ -48,14 +48,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   .btn {
-    border: none;
-    background-color: inherit;
-    padding: 20px 35px;
-    font-size: 16px;
-    cursor: pointer;
-    display: block;
-    position: relative;
-    align-items: center;
+    border: white;
+  background-color: inherit;
+  padding: 40px 50px;
+  font-size: 35px;
+  margin-top: 2.5%;
+  cursor: pointer;
+  display: inline-flex;
+  border-radius: 10px;
+  top: 70px;
   }
 .blue {
   color: blue;
@@ -113,16 +114,21 @@
 
 </style>
 </head>
-<body>
-  <button id="blue" class="btn blue" onclick="checkColor('blue')">Blue</button>
-  <button id="yellow" class="btn yellow" onclick="checkColor('yellow')">Yellow</button>
-  <button id="red" class="btn red" onclick="checkColor('red')">Red</button>
-  <button id="green" class="btn green" onclick="checkColor('green')">Green</button>
-  <button id="orange" class="btn orange" onclick="checkColor('orange')">Orange</button>
-  <button id="purple" class="btn purple" onclick="checkColor('purple')">Purple</button>
 
+
+<center>
+<body>
+  
+
+  <button id="blue" onclick="checkColor" class="btn blue">■</button>
+  <button id="yellow" onclick="checkColor" class="btn yellow">■</button>
+  <button id="red" onclick="checkColor" class="btn red">■</button>
+  <button id="green" onclick="checkColor" class="btn green">■</button>
+  <button id=" orange" onclick="checkColor" class="btn orange">■</button>
+  <button id="purple" onclick="checkColor" class="btn purple">■</button>
 
 </body>
+</center>
 </html>
 
 
@@ -130,15 +136,17 @@
 <head>
 <style>
 scorebox {
-  background-color: white;
-  width: 400px;
-  height: 150px;
-  border: 15px black;
-  padding: 50px;
-  margin: 20px;
-  position: relative;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  height: 10em;
+  width: 20%;
+  margin-left: 0%;
+  margin-top: 1.5%;
+  background-color: white;
+  padding: 10px 90px 15px 90px;
   border-radius: 10px;
+  position: relative;
 }
 </style>
 </head>
