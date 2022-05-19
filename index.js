@@ -34,15 +34,15 @@ function combineColor(){
 
 function colorStringToRGB(color){
 	if (color == "blue"){
-		blue = [0,0,255];
+		blue = "0,0,255";
 	}
 	else if (color == "yellow"){
-		yellow = [255,255,0];
+		yellow = "255,255,0";
 	}
 	else if (color == "red"){
-		red = [255,0,0];
+		red = "255,0,0";
 	}
-	//console.log(color1,color2);
+	console.log(color1,color2);
 	return 0;
 }
 
