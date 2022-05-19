@@ -24,14 +24,15 @@ function resetColors(){
 function combineColor(){
 	console.log("Got colors: "+color1+", "+color2);
 	color1 = colorStringToRGB(color1);
+	console.log("Got values: "+color1);
 	color2 = colorStringToRGB(color2);
-	console.log("Got values: "+color1+": "+color2+": ");
+	console.log("Got values: "+color2);
 	resetColors();
 	console.log(color1+": "+color2+": ");
 	return 0;
 }
 
-function colorStringToRGB(color,sColor){
+function colorStringToRGB(color){
 	if (color == "blue"){
 		blue = [0,0,255];
 	}
@@ -41,7 +42,7 @@ function colorStringToRGB(color,sColor){
 	else if (color == "red"){
 		red = [255,0,0];
 	}
-	console.log(color1,color2);
+	//console.log(color1,color2);
 	return 0;
 }
 
