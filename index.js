@@ -22,13 +22,13 @@ function resetColors(){
 }
 
 function combineColor(){
-	console.log("Got colors: "+color1+", "+color2);
+	console.log("Got colors: "+color1+" and "+color2);
 	color1 = colorStringToRGB(color1);
-	console.log("Got values: "+color1);
 	color2 = colorStringToRGB(color2);
-	console.log("Got values: "+color2);
+	console.log("Got values: "+color1+" and "+color2);
+	createColor();
 	resetColors();
-	console.log(color1+": "+color2+": ");
+	console.log("Colors have reset: "+color1+color2);
 	return 0;
 }
 
@@ -61,6 +61,7 @@ function colorStringToRGB(color){
 	
 }
 
-function createColor(color1,color2){
-
+function createColor(color1,color2,result){
+	result = color1 + color2;
+	console.log(result);
 }
