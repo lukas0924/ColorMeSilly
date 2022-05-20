@@ -45,6 +45,18 @@ function colorStringToRGB(color){
 		red = "255,0,0";
 		return red;
 	}
+	else if(color == "yellow"){
+		yellow = "255,255,0"
+		return yellow;
+	}
+	else if(color == "orange"){
+		orange = "255,165,0"
+		return orange;
+	}
+	else if(color == "purple"){
+		purple = "128,0,128"
+		return purple;
+	}
 	console.log(color1,color2);
 	
 }
