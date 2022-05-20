@@ -3,7 +3,7 @@ var color2 = "";
 
 function checkColor(color){
 	if (color1 && color2){
-		combineColor();
+		combine_color();
 	}
 	else if (!color1){
 		color1 = color;
@@ -36,17 +36,18 @@ function colorStringToRGB(color){
 	if (color == "blue"){
 		blue = "0,0,255";
 	}
-	else if (color == "green"){
-		yellow = "0,255,0";
+	else if (color == "yellow"){
+		yellow = "255,255,0";
 	}
 	else if (color == "red"){
 		red = "255,0,0";
 	}
-	//console.log(color1,color2);
 	console.log(color1,color2);
 	return 0;
 }
 
 function createColor(color1,color2){
-
-}
+	if (color1 == "blue" && color2 == "yellow"){
+		return green;
+	}
+} 
