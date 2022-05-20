@@ -42,9 +42,8 @@ function colorStringToRGB(color){
 	else if (color == "red"){
 		red = "255,0,0";
 	}
-	//console.log(color1,color2);
 	console.log(color1,color2);
-	return 0;
+	//return 0;
 }
 
 function createColor(color1,color2){
