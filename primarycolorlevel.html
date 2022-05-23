@@ -16,17 +16,6 @@
         </body>
 </html>
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="scoreboard" href="scoreboard.html">
-        </head>
-        <body>
-            
-        </body>
-</html>
-
 
 
 <!DOCTYPE html>
@@ -92,11 +81,11 @@
   color: white;
 }
 .green {
-  color: #4CBB17;
+  color: green;
 }
 
 .green:hover {
-  background: #4CBB17;
+  background: green;
   color: white;
 }
 .magenta {
@@ -123,7 +112,7 @@
     <script>
         var g=0;
     function upOrDown(isUp) {
-      g = isUp? (++g>3?3:g):(--g<-1?-1:g)
+      g = isUp? (++g>3?3:g):(--g<0?0:g)
       document.getElementById('up').innerHTML = g;
       return;
     }
@@ -133,16 +122,10 @@
 <button onclick="upOrDown(true);alert('Correct! +1');" class="btn blue">■</button>
 <button onclick="upOrDown(false);alert('Incorrect. This is a Secondary Color -1');" class="btn yellow">■</button>
 <button onclick="upOrDown(true);alert('Correct! +1');" class="btn green">■</button>
-<<<<<<< HEAD
-<button onclick="upOrDown(false);alert('Incorrect. This is a Secondary Color -1');" class="btn purple">■</button>
-=======
 <button onclick="upOrDown(false);alert('Incorrect. This is a Secondary Color -1');" class="btn magenta">■</button>
->>>>>>> 9dc744f2e4600b289acacc0e54f7ba68e5b5ab75
 <button onclick="upOrDown(true);alert('Correct! +1');" class="btn red">■</button>
 <h2>Results:</h2>
 </center>
-
-
 
 <center>
 <scorebox id="up"></scorebox>
@@ -153,19 +136,19 @@
 <html>
 <head>
 <style>
-    scorebox {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      height: 10em;
-      width: 20%;
-      margin-left: 0%;
-      margin-top: 1.5%;
-      background-color: white;
-      padding: 10px 90px 15px 90px;
-      border-radius: 10px;
-      position: relative;
-    }
+scorebox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 10em;
+  width: 20%;
+  margin-left: 0%;
+  margin-top: 1.5%;
+  background-color: white;
+  padding: 10px 90px 15px 90px;
+  border-radius: 10px;
+  position: relative;
+}
 
 </style>
 <div class="homebuttonprimary"<button  onclick="location.href='index.html'">
