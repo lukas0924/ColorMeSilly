@@ -58,9 +58,6 @@
 
 
 
-
-/* Greens */
-
 .green {
   color: #4CBB17;
 }
@@ -79,11 +76,15 @@
     color: white;
 }
 
+.springgreen {
+  color: springgreen;
+}
 
+.springgreen:hover {
+  background: springgreen;
+  color: white;
+}
 
-
-
-/* Reds */
 
 .red {
   color: red;
@@ -94,29 +95,16 @@
   color: white;
 }
 
-.vermilion {
-    color: #FF4D00
+.rose {
+    color: #FF007F
 }
 
-.vermilion:hover {
-    background: #FF4D00;
+.rose:hover {
+    background: #FF007F;
     color: white;
 }
 
 
-
-
-
-/* Purples */
-
-.purple {
-  color: #9932cc;
-}
-
-.purple:hover {
-  background: #9932cc;
-  color: white;
-}
 
 .magenta {
     color: magenta;
@@ -126,10 +114,6 @@
     background: magenta;
     color: white;
 }
-
-
-
-/* Blues */
 
 .blue {
   color: blue;
@@ -141,12 +125,12 @@
 }
 
 
-.teal {
-    color: #008080;
+.azure {
+    color: #0080FF;
 }
 
-.teal:hover {
-    background: #008080;
+.azure:hover {
+    background: #0080FF;
     color: white;
 }
 
@@ -160,9 +144,6 @@
 }
 
 
-
-/* Yellows */
-
 .yellow {
   color: yellow;
 }
@@ -172,18 +153,16 @@
   color: white;
 }
 
-.amber {
-    color: #FFBF00
+.cyan {
+    color: cyan
 }
 
-.amber:hover {
-    background: #FFBF00;
+.cyan:hover {
+    background: cyan;
     color: white;
 }
 
 
-
-/*Oranges*/
 
 .orange {
   color: orange;
@@ -212,16 +191,16 @@ return;
 <center>
 <button onclick="upOrDown(false);" class="btn green">■</button>
 <button onclick="upOrDown(true);" class="btn chartreuse">■</button>
+<button onclick="upOrDown(true);" class="btn springgreen">■</button>
 <button onclick="upOrDown(false);" class="btn red">■</button>
-<button onclick="upOrDown(true);" class="btn vermilion">■</button>
-<button onclick="upOrDown(false);" class="btn purple">■</button>
-<button onclick="upOrDown(true);" class="btn magenta">■</button>
-<button onclick="upOrDown(true);" class="btn amber">■</button>
+<button onclick="upOrDown(true);" class="btn rose">■</button>
+<button onclick="upOrDown(false);" class="btn magenta">■</button>
 <button onclick="upOrDown(false);" class="btn blue">■</button>
-<button onclick="upOrDown(true);" class="btn teal">■</button>
+<button onclick="upOrDown(true);" class="btn azure">■</button>
 <button onclick="upOrDown(true);" class="btn violet">■</button>
 <button onclick="upOrDown(false);" class="btn yellow">■</button>
-<button onclick="upOrDown(false);" class="btn orange">■</button>
+<button onclick="upOrDown(false);" class="btn cyan">■</button>
+<button onclick="upOrDown(true);" class="btn orange">■</button>
 </center>
 <h2>Results:</h2>
 <center><scorebox id="up"></scorebox></center>
