@@ -1,23 +1,67 @@
 <html>
-    <h1>Level 1 - Primary Colors:</h1>
-    <h3>Select all primary colors:</h3>
-<head>
+    <style>
+      body {
+            background-color: black;
+      }
+    </style>
+  
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesheet.css">
+        </head>
+        <body>
+            
+        </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+    <style>
+        .multicolortext {
+            background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip:text;
+            color:transparent;
+        }
+    </style>
+</html>
+
+    <div class="l1">
+    <h1>
+      <span class="multicolortext">PRIMARY COLORS</span>
+    </h1>
+    </div>
+    <div class="l2">
+    <p>SELECT ALL PRIMARY COLORS</p>
+  </div>
+
+</html>
+
+    
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .btn {
   border: none;
   background-color: inherit;
-  padding: 14px 28px;
-  font-size: 16px;
+  padding: 40px 50px;
+  font-size: 35px;
+  margin-top: 2.5%;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
+  border-radius: 10px;
+  top: 70px;
 }
-.orange {
-  color: orange;
+.cyan {
+  color: cyan;
 }
 
-.orange:hover {
-  background: orange;
+.cyan:hover {
+  background: cyan;
   color: white;
 }
 .blue {
@@ -25,7 +69,7 @@
 }
 
 .blue:hover {
-  background:blue;
+  background: blue;
   color: white;
 }
 .yellow {
@@ -37,19 +81,19 @@
   color: white;
 }
 .green {
-  color: #4CBB17;
+  color: green;
 }
 
 .green:hover {
-  background: #4CBB17;
+  background: green;
   color: white;
 }
-.purple {
-  color: #9932cc;
+.magenta {
+  color: magenta;
 }
 
-.purple:hover {
-  background: #9932cc;
+.magenta:hover {
+  background: magenta;
   color: white;
 }
 .red {
@@ -64,45 +108,135 @@
 </style>
 </head>
 <body>
-  <script>
-    var g=0;
-function upOrDown(isUp) {
-  g = isUp? (++g>3?3:g):(--g<0?0:g)
-  document.getElementById('up').innerHTML = g;
-  return;
-}
-</script>
 
-<button onclick="upOrDown(false);" class="btn green">■</button>
-<button onclick="upOrDown(true);" class="btn red">■</button>
-<button onclick="upOrDown(false);" class="btn purple">■</button>
-<button onclick="upOrDown(true);" class="btn blue">■</button>
-<button onclick="upOrDown(true);" class="btn yellow">■</button>
-<button onclick="upOrDown(false);" class="btn orange">■</button>
+    <script>
+        var g=0;
+    function upOrDown(isUp) {
+      g = isUp? (++g>3?3:g):(--g<0?0:g)
+      document.getElementById('up').innerHTML = g;
+      return;
+    }
+    </script>
+    <script>
+    function popup(isfalse){
+      document.getElementById("popup-1").classlist.toggle(active);
+    }
+
+    </script>
+<center>
+<button onclick="upOrDown(false), popup(isfalse);" class="btn cyan">■</button>
+<button onclick="upOrDown(true);alert('Correct! +1');" class="btn blue">■</button>
+<button onclick="upOrDown(false);alert('Incorrect. This is a Secondary Color -1');" class="btn yellow">■</button>
+<button onclick="upOrDown(true);alert('Correct! +1');" class="btn green">■</button>
+<button onclick="upOrDown(false);alert('Incorrect. This is a Secondary Color -1');" class="btn magenta">■</button>
+<button onclick="upOrDown(true);alert('Correct! +1');" class="btn red">■</button>
 <h2>Results:</h2>
-<div id="up"></div>
-
+</center>
+<center>
+  <div class="q2">
+    <p>SCORE</p>
+  </div>
+  </center>
+<center>
+<scorebox id="up"></scorebox>
+</center>
 </body>
 </html>
-
 
 <html>
 <head>
 <style>
-div {
-  background-color: lightgrey;
-  width: 300px;
-  border: 15px grey;
-  padding: 50px;
-  margin: 20px;
+scorebox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 22%;
+  width: 20%;
+  margin-left: 0%;
+  margin-top: 0.01%;
+  background-color: white;
+  padding: 10px 90px 15px 90px;
+  border-radius: 10px;
+  position: relative;
+  font-family: koulen;
+  src: url(KoulenFont/koulen-regular-webfont.woff);
+  font-weight: bold;
+  font-size:80px;
 }
+
 </style>
+<div class="homebuttonprimary"<button  onclick="location.href='index.html'">
+  GO HOME
+  </button>
+</div>
+
+<div class="nextlevel2"<button  onclick="location.href='secondarycolorlevel.html'">
+  NEXT LEVEL
+  </button>
+</div>
 </head>
-<body>
 
-<h2>Results</h2>
+Popup 
+<div class="popup" id="popup-1">
+  <div class="overlay"></div>
+  <div class="content">
+  <div class="close-btn"></div>
+    <h1>Title</h1>
+    <p>This is a secondary color. Think about what color wheel you are using
+    </p>
+  </div>
+</div>
 
-<div>This is a result!</div>
+<div>
+<style>
+.popup .overlay{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  z-index: 1;
+  display: none;
+}
 
-</body>
-</html>
+.popup .content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 450px;
+  height: 220px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.popup .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.popup.active .overlay {
+  display:block;
+}
+
+.popup.active .content {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+</style>
+</div>

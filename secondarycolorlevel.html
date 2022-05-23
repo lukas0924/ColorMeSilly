@@ -125,7 +125,11 @@ function upOrDown(isUp) {
 <button onclick="upOrDown(true);alert('Correct! +1');" class="btn cyan">■</button>
 <h2>Results:</h2>
 </center>
-
+<center>
+  <div class="q2">
+    <p>SCORE</p>
+  </div>
+  </center>
 <center>
 <scorebox id="up"></scorebox>
 </center>
@@ -139,14 +143,18 @@ scorebox {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 10em;
+  height: 22%;
   width: 20%;
   margin-left: 0%;
-  margin-top: 1.5%;
+  margin-top: 0.01%;
   background-color: white;
   padding: 10px 90px 15px 90px;
   border-radius: 10px;
   position: relative;
+  font-family: koulen;
+  src: url(KoulenFont/koulen-regular-webfont.woff);
+  font-weight: bold;
+  font-size:80px;
 }
 </style>
 <div class="homebuttonsecondary"<button  onclick="location.href='index.html'">

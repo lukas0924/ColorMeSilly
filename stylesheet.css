@@ -533,3 +533,27 @@
 
 
 /*scoreboardmatching*/
+
+.q2 { 
+    font-size: 30px;
+    line-height: 25px;
+    font-family: koulen;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    margin-top: -3%;
+    position: relative;
+    color:ivory;
+}
+
+.q3 { 
+    font-size: 30px;
+    line-height: 25px;
+    font-family: koulen;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0%;
+    position: relative;
+    color:ivory;
+}
