@@ -72,12 +72,12 @@
   color: white;
 }
 
-.purple {
-  color: #9932cc;
+.magenta {
+  color: magenta;
 }
 
-.purple:hover {
-  background: #9932cc;
+.magenta:hover {
+  background: magenta;
   color: white;
 }
 .blue {
@@ -96,12 +96,12 @@
   background: #FFDB58;
   color: white;
 }
-.orange {
-  color: orange;
+.cyan {
+  color: cyan;
 }
 
-.orange:hover {
-  background: orange;
+.cyan:hover {
+  background: cyan;
   color: white;
 }
 </style>
@@ -117,12 +117,12 @@ function upOrDown(isUp) {
 }
 </script>
 <center>
-<button onclick="upOrDown(true);alert('Incorrect. This is a Primary Color -1');" class="btn green">■</button>
+<button onclick="upOrDown(false);alert('Incorrect. This is a Primary Color -1');" class="btn green">■</button>
 <button onclick="upOrDown(false);alert('Incorrect. This is a Primary Color -1');" class="btn red">■</button>
-<button onclick="upOrDown(true);alert('Correct! +1');" class="btn purple">■</button>
+<button onclick="upOrDown(true);alert('Correct! +1');" class="btn magenta">■</button>
 <button onclick="upOrDown(false);alert('Incorrect. This is a Primary Color -1');" class="btn blue">■</button>
-<button onclick="upOrDown(false);alert('Correct! +1');" class="btn yellow">■</button>
-<button onclick="upOrDown(true);alert('Correct! +1');" class="btn orange">■</button>
+<button onclick="upOrDown(true);alert('Correct! +1');" class="btn yellow">■</button>
+<button onclick="upOrDown(true);alert('Correct! +1');" class="btn cyan">■</button>
 <h2>Results:</h2>
 </center>
 
