@@ -75,7 +75,7 @@ function createColor(color1,color2){
 	let r3=Math.floor((r1+r2)/2);
 	let g3=Math.floor((g1+g2)/2);
 	let b3=Math.floor((b1+b2)/2);
-	
-	console.log(color1+" and "+color2);
-	console.log([r3,g3,b3]);
+	console.log("Your new color is: " + [r3,g3,b3]);
+	let newColor = [r3,g3,b3];
+	console.log(newColor);
 }
