@@ -190,18 +190,18 @@ return;
 }
 </script>
 <center>
-<button onclick="upOrDown(false);" class="btn green">■</button>
-<button onclick="upOrDown(true);" class="btn chartreuse">■</button>
-<button onclick="upOrDown(true);" class="btn springgreen">■</button>
-<button onclick="upOrDown(false);" class="btn red">■</button>
-<button onclick="upOrDown(true);" class="btn rose">■</button>
-<button onclick="upOrDown(false);" class="btn magenta">■</button>
-<button onclick="upOrDown(false);" class="btn blue">■</button>
-<button onclick="upOrDown(true);" class="btn azure">■</button>
-<button onclick="upOrDown(true);" class="btn violet">■</button>
-<button onclick="upOrDown(false);" class="btn yellow">■</button>
-<button onclick="upOrDown(false);" class="btn cyan">■</button>
-<button onclick="upOrDown(true);" class="btn orange">■</button>
+<button id="myButton1" onclick="upOrDown(false);doSomething1();" class="btn green">■</button>
+<button id="myButton2" onclick="upOrDown(true);doSomething2();" class="btn chartreuse">■</button>
+<button id="myButton3" onclick="upOrDown(true);doSomething3();" class="btn springgreen">■</button>
+<button id="myButton4" onclick="upOrDown(false);doSomething4();" class="btn red">■</button>
+<button id="myButton5" onclick="upOrDown(true);doSomething5();" class="btn rose">■</button>
+<button id="myButton6" onclick="upOrDown(false);doSomething6();" class="btn magenta">■</button>
+<button id="myButton7" onclick="upOrDown(false);doSomething7();" class="btn blue">■</button>
+<button id="myButton8" onclick="upOrDown(true);doSomething8();" class="btn azure">■</button>
+<button id="myButton9" onclick="upOrDown(true);doSomething9();" class="btn violet">■</button>
+<button id="myButton10" onclick="upOrDown(false);doSomething10();" class="btn yellow">■</button>
+<button id="myButton11" onclick="upOrDown(false);doSomething11();" class="btn cyan">■</button>
+<button id="myButton12" onclick="upOrDown(true);doSomething12();" class="btn orange">■</button>
 </center>
 <h2>Results:</h2>
 <center>
@@ -250,3 +250,54 @@ scorebox {
   </button>
 </div>
 </html>
+
+<script>
+  function doSomething1 () {
+    document.getElementById("myButton1").disabled = true;
+  
+  }
+  function doSomething2 () {
+    document.getElementById("myButton2").disabled = true;
+  
+  }
+  function doSomething3 () {
+    document.getElementById("myButton3").disabled = true;
+  
+  }
+  function doSomething4 () {
+    document.getElementById("myButton4").disabled = true;
+  
+  }
+  function doSomething5 () {
+    document.getElementById("myButton5").disabled = true;
+  
+  }
+  function doSomething6 () {
+    document.getElementById("myButton6").disabled = true;
+  
+  }
+  function doSomething7 () {
+    document.getElementById("myButton7").disabled = true;
+  
+  }
+  function doSomething8 () {
+    document.getElementById("myButton8").disabled = true;
+  
+  }
+  function doSomething9 () {
+    document.getElementById("myButton9").disabled = true;
+  
+  }
+  function doSomething10 () {
+    document.getElementById("myButton10").disabled = true;
+  
+  }
+  function doSomething11 () {
+    document.getElementById("myButton11").disabled = true;
+  
+  }
+  function doSomething12 () {
+    document.getElementById("myButton12").disabled = true;
+  
+  }
+  </script>

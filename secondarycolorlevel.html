@@ -117,12 +117,12 @@ function upOrDown(isUp) {
 }
 </script>
 <center>
-<button onclick="upOrDown(false);alert('Incorrect. This is a Primary Color -1');" class="btn green">■</button>
-<button onclick="upOrDown(false);alert('Incorrect. This is a Primary Color -1');" class="btn red">■</button>
-<button onclick="upOrDown(true);alert('Correct! +1');" class="btn magenta">■</button>
-<button onclick="upOrDown(false);alert('Incorrect. This is a Primary Color -1');" class="btn blue">■</button>
-<button onclick="upOrDown(true);alert('Correct! +1');" class="btn yellow">■</button>
-<button onclick="upOrDown(true);alert('Correct! +1');" class="btn cyan">■</button>
+<button id="myButton1" onclick="upOrDown(false);alert('Incorrect. This is a Primary Color -1');doSomething1()" class="btn green">■</button>
+<button id="myButton2" onclick="upOrDown(false);alert('Incorrect. This is a Primary Color -1');doSomething2()" class="btn red">■</button>
+<button id="myButton3" onclick="upOrDown(true);alert('Correct! +1');doSomething3()" class="btn magenta">■</button>
+<button id="myButton4" onclick="upOrDown(false);alert('Incorrect. This is a Primary Color -1');doSomething4()" class="btn blue">■</button>
+<button id="myButton5" onclick="upOrDown(true);alert('Correct! +1');doSomething5()" class="btn yellow">■</button>
+<button id="myButton6" onclick="upOrDown(true);alert('Correct! +1');doSomething6()" class="btn cyan">■</button>
 <h2>Results:</h2>
 </center>
 <center>
@@ -168,3 +168,30 @@ scorebox {
   </button>
 </div>
 </head>
+
+<script>
+  function doSomething1 () {
+    document.getElementById("myButton1").disabled = true;
+  
+  }
+  function doSomething2 () {
+    document.getElementById("myButton2").disabled = true;
+  
+  }
+  function doSomething3 () {
+    document.getElementById("myButton3").disabled = true;
+  
+  }
+  function doSomething4 () {
+    document.getElementById("myButton4").disabled = true;
+  
+  }
+  function doSomething5 () {
+    document.getElementById("myButton5").disabled = true;
+  
+  }
+  function doSomething6 () {
+    document.getElementById("myButton6").disabled = true;
+  
+  }
+  </script>
