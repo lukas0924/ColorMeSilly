@@ -139,7 +139,7 @@
 <html>
 <head>
 <style>
-scorebox {
+#scorebox {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -160,10 +160,10 @@ scorebox {
 </head>
 <body>
 
-<h2>Results</h2>
-<center>
-<scorebox>This is a result!</scorebox>
-</center>
+  <h2>Results</h2>
+  <center><h1 id="scorebox">result</h1></center>
+  <center><button onclick="changeColor()">see result</button></center>
+
 <div class="homebutton2"<button  onclick="location.href='index.html'">
   GO HOME
   </button></div>
