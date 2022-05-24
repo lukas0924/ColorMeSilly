@@ -76,26 +76,26 @@ function createColor(color1,color2){
 	let g3=Math.floor((g1+g2)/2);
 	let b3=Math.floor((b1+b2)/2);
 	let newColor = [r3,g3,b3];
-	// if(color1 == red && color2 == green){
-	// 	r3 = 255;
-	// 	g3 = 255;
-	// 	b3 = 0;
-	// }
-	// else if(color1 == green && color2 == red){
-	// 	r3 = 255;
-	// 	g3 = 255;
-	// 	b3 = 0;
-	// }
-	// else if(color1 == blue && color2 == yellow){
-	// 	r3 = 0;
-	// 	g3 = 255;
-	// 	b3 = 0;
-	// }
-	// else if(color1 == yellow && color2 == blue){
-	// 	r3 = 0;
-	// 	g3 = 255;
-	// 	b3 = 0;
-	// }
+	if(color1 == red && color2 == green){
+		r3 = 255;
+		g3 = 255;
+		b3 = 0;
+	}
+	else if(color1 == green && color2 == red){
+		r3 = 255;
+		g3 = 255;
+		b3 = 0;
+	}
+	else if(color1 == blue && color2 == yellow){
+		r3 = 0;
+		g3 = 255;
+		b3 = 0;
+	}
+	else if(color1 == yellow && color2 == blue){
+		r3 = 0;
+		g3 = 255;
+		b3 = 0;
+	}
 	console.log("Your new color is: " + newColor);
 	colors = "rgb("+r3+","+g3+","+b3+")";
 	console.log(colors);
