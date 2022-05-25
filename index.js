@@ -66,6 +66,7 @@ function colorStringToRGB(color){
 }
 
 function createColor(color1,color2){
+	console.log(color1,color2);
 	let r1=color1[0];
 	let g1=color1[1];
 	let b1=color1[2];
