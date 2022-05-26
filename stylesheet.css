@@ -1,4 +1,4 @@
-/*Tile: Color Me Silly*/
+/*Tile: Color Me Silly(Home Screen)*/
 
 @font-face {
     font-family: bungee;
@@ -18,7 +18,7 @@
     color:white;
 }
 
-/*Sub-Title: Welcome to the game of color combinations*/
+/*Sub-Title: Welcome to the game of color combinations(Home Screen)*/
 
 @font-face {
     font-family: bungee;
@@ -37,7 +37,7 @@
     color:white;
 }
 
-/*Information on Color Theory*/
+/*Information on Color Theory(Home Screen)*/
 
 @font-face {
     font-family: koulen;
@@ -57,7 +57,7 @@
 }
 
 
-/*ButtonsHomePage*/
+/*ButtonsHomeScreen*/
 
 @font-face {
     font-family: modak;
@@ -155,7 +155,7 @@
 }
 
 
-/*GameSelectionScreen*/
+/*GameSelectionScreen Buttons and Text*/
 
 
 .f1 {
@@ -228,7 +228,7 @@
 }
 
 
-/*Level1*/
+/*Level1 Text*/
 
 
 .l1 {
@@ -251,7 +251,7 @@
     color:white;
 }
 
-/*HomeButtonLevel1*/ 
+/*Game Selection Screen HomeButton*/ 
 .homebutton1 {
     background-color: white;
     border: none;
@@ -273,6 +273,7 @@
     float: left;
 }
 
+/*HomeButtonLevel1*/ 
 .homebutton7 {
     background-color: white;
     border: none;
@@ -289,7 +290,7 @@
     border: none;
     vertical-align: middle;
     position: relative;
-    margin-top: 8%;
+    margin-top: 2%;
     align-items: center;
     float: left;
 }
@@ -317,7 +318,7 @@
     top: 200px;
     align-items: center;
     float: left;
-    top: 124;
+    top: 29.5;
 }
 
 /*HomeButtonPrimaryColors*/
@@ -458,7 +459,7 @@
     top: 200px;
     align-items: center;
     float: right;
-    top: 120;
+    top: 29.5;
 }
 
 
@@ -483,7 +484,7 @@
     top: 200px;
     align-items: center;
     float: right;
-    top: 124;
+    top: 29.5;
 }
 
 /*Guide*/
@@ -556,4 +557,92 @@
     margin-top: 0%;
     position: relative;
     color:ivory;
+}
+
+
+/*Restart Button for P,S,T Levels*/
+.restart1 {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 25px;
+    font-family: koulen;
+    border-radius: 10px;
+    height: 50px;
+    width: 115px;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    position: relative;
+    align-items: center;
+    left: 39%;
+    margin-top: 8.6%;
+}
+
+.restart2 {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 25px;
+    font-family: koulen;
+    border-radius: 10px;
+    height: 50px;
+    width: 115px;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    position: relative;
+    align-items: center;
+    left: 39%;
+    margin-top: 8.6%;
+}
+
+.restart3 {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 25px;
+    font-family: koulen;
+    border-radius: 10px;
+    height: 50px;
+    width: 115px;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    position: relative;
+    align-items: center;
+    left: 38.5%;
+    margin-top: 8.7%;
+}
+
+
+/* Home Button Information Screen */
+.homebutton9 {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 25px;
+    font-family: koulen;
+    border-radius: 10px;
+    height: 50px;
+    width: 115px;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    position: relative;
+    margin-top: 20%;
+    align-items: center;
+    float: left;
 }
