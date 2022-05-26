@@ -46,6 +46,7 @@
       <script src="index.js"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The following code creates the buttons for level game play -->
 <style>
   .btn {
     border: white;
@@ -115,7 +116,8 @@
 </style>
 </head>
 
-
+<!-- this is where the buttons access index.js file to
+   gain functionality and create the color -->
 <center>
 <body>
   
@@ -135,6 +137,7 @@
 </center>
 </html>
 
+<!-- the below code creates the score box where the result is diplayed -->
 
 <html>
 <head>
@@ -160,23 +163,13 @@
 </style>
 </head>
 
-<script>
-  if(color1 == blue && color2 == yellow){
-		r3 = 0;
-		g3 = 255;
-		b3 = 0;
-	}
-	else if(color1 == yellow && color2 == blue){
-		r3 = 0;
-		g3 = 255;
-		b3 = 0;
-  }
-</script>
-
 <body>
 
   <h2>Results</h2>
   <center><h1 id="scorebox"></h1></center>
+
+<!-- the code below created the buttons allowing the user to either go to 
+  the homepage or finish the game -->
 
 <div class="homebutton2"<button  onclick="location.href='index.html'">
   GO HOME
