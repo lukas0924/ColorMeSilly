@@ -1,6 +1,10 @@
+// this file contains the javascript code that gives the
+// buttons functionality for the color combination game mode 
 var color1 = "";
 var color2 = "";
 
+// this function checks that the colors revieve their name when clicked. 
+// then combine color is called to complete the action.
 function checkColor(color){
 	if (color1 && color2){
 		combineColor();
@@ -15,6 +19,8 @@ function checkColor(color){
 	return 0;
 }
 
+// this function sets the colors back to empty 
+// strings at then end of the function so more colors can be chosen 
 function resetColors(){
 	color1 = "";
 	color2 = "";
@@ -22,6 +28,7 @@ function resetColors(){
 	return 0;
 }
 
+// this funciton takes both colors clicked and combines after creating the rgb values
 function combineColor(){
 	console.log("Got colors: "+color1+" and "+color2);
 	color1 = colorStringToRGB(color1);
@@ -32,6 +39,7 @@ function combineColor(){
 	return 0;
 }
 
+// this function creates the rgb values for each color when they are chosen
 function colorStringToRGB(color){
 	if (color == "blue"){
 		blue = [0,0,255];
@@ -65,6 +73,10 @@ function colorStringToRGB(color){
 	
 }
 
+// this funciton creates the color made by the two colors chosen 
+// by dividing each rgb value by two before adding them together to create the color.
+// the combination of red and green is a special case because the 
+// color returned is not the correct shade of yellow.
 function createColor(color1,color2){
 	console.log(color1,color2);
 	let r1=color1[0];
@@ -77,7 +89,7 @@ function createColor(color1,color2){
 	let g3=Math.floor((g1+g2)/2);
 	let b3=Math.floor((b1+b2)/2);
 	let newColor = [r3,g3,b3];
-	let yellow =[255,255,0];
+
 	if(color1 == red && color2 == green){
 		r3 = 255;
 		g3 = 255;
@@ -87,19 +99,9 @@ function createColor(color1,color2){
 		r3 = 255;
 		g3 = 255;
 		b3 = 0;
-	} 
-	else if(color1 == blue && color2 == yellow){
-		r3 = 0;
-		g3 = 255;
-		b3 = 0;
 	}
-	else if(color1 == yellow && color2 == blue){
-		r3 = 0;
-		g3 = 255;
-		b3 = 0;
-	}
+
 	console.log("Your new color is: " + newColor);
 	colors = "rgb("+r3+","+g3+","+b3+")";
 	document.getElementById('scorebox').style.backgroundColor=colors;
 }
-
